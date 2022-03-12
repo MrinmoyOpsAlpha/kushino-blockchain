@@ -24,7 +24,7 @@ class Blockchain:
         # saving the previous hash
         prevHash=self.chain[-1].hash
 
-        # createing unique hash
+        # creating unique hash
         hash=hashGenerator(data+prevHash) 
         block=Block(data,hash,prevHash)
         self.chain.append(block)
